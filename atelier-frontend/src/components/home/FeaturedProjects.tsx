@@ -13,10 +13,10 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
   return (
     <section
       aria-label="Selected Projects"
-      className="w-full bg-paper py-24 lg:py-32 px-6 sm:px-8 border-b border-border"
+      className="w-full bg-paper py-16 sm:py-24 lg:py-32 px-5 sm:px-8 border-b border-border"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
             <SectionLabel>SELECTED WORK</SectionLabel>
             <h2 className="type-headline text-ink">
@@ -28,8 +28,8 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
           </div>
         </div>
 
-        {/* Asymmetric Editorial Grid (7/12, 5/12, then 6/12, 6/12) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+        {/* Asymmetric Editorial Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-start">
           {projects[0] && (
             <div className="lg:col-span-7">
               <ProjectCard
