@@ -6,7 +6,8 @@
     "dev": "sanity dev",
     "start": "sanity start",
     "build": "sanity build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "seed": "node scripts/seed.mjs"
   },
   "dependencies": {
     "@sanity/vision": "^3.65.0",

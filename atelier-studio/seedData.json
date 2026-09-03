@@ -1,0 +1,475 @@
+[
+  {
+    "_id": "project-komorebi-house",
+    "_type": "project",
+    "title": "Komorebi House",
+    "slug": { "_type": "slug", "current": "komorebi-house" },
+    "category": "Residential",
+    "location": "Kyoto, Japan",
+    "year": 2024,
+    "coverImage": {
+      "_type": "image",
+      "alt": "Board-formed concrete pavilion with floor-to-ceiling glass framing a traditional Kyoto moss garden at dusk",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-komorebi-cover",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=85"
+      }
+    },
+    "gallery": [
+      {
+        "_type": "image",
+        "alt": "Interior living volume featuring low-slung hinoki wood furnishings and soft diffused tatami lighting",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-komorebi-gallery-1",
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=85"
+        }
+      },
+      {
+        "_type": "image",
+        "alt": "Architectural junction where exposed aggregate concrete meets precision-milled cedar rafters",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-komorebi-gallery-2",
+          "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85"
+        }
+      },
+      {
+        "_type": "image",
+        "alt": "Linear stone pathway leading through cedar forest to the sheltered northern tea terrace",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-komorebi-gallery-3",
+          "url": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1600&q=85"
+        }
+      }
+    ],
+    "summary": "A private sanctuary crafted from board-formed concrete, weathered cedar, and deep architectural shadows, built in reverence to Kyoto's shifting seasons.",
+    "body": [
+      {
+        "_key": "p1",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t1",
+            "_type": "span",
+            "text": "Nestled into the quiet wooded foothills of northern Kyoto, Komorebi House was conceived as a meditation on the Japanese concept of dappled sunlight filtering through tree canopies. Rather than imposing an alien geometry onto the slope, the residence steps down across three terraced volumes, each calibrated to frame specific botanical vignettes."
+          }
+        ]
+      },
+      {
+        "_key": "p2",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t2",
+            "_type": "span",
+            "text": "The structural skeleton employs board-formed concrete tinted with local river silt, producing an earthy tone that patinas gracefully with moisture. Deep overhanging eaves crafted from charred yakisugi cedar protect the interior from summer sun while allowing low winter light to penetrate deep into the living spaces."
+          }
+        ]
+      },
+      {
+        "_key": "p3",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t3",
+            "_type": "span",
+            "text": "Inside, boundaries dissolve through pocketed shoji screens and uninterrupted limestone floors that flow from hearth to exterior reflection pool. Every joint and shadow gap speaks to the tactile dialogue between traditional Japanese joinery and contemporary minimalist engineering."
+          }
+        ]
+      }
+    ],
+    "featured": true,
+    "orderRank": 1
+  },
+  {
+    "_id": "project-ochre-pavilion",
+    "_type": "project",
+    "title": "The Ochre Pavilion",
+    "slug": { "_type": "slug", "current": "ochre-pavilion" },
+    "category": "Residential",
+    "location": "Alentejo, Portugal",
+    "year": 2023,
+    "coverImage": {
+      "_type": "image",
+      "alt": "Rammed-earth monolithic courtyard home surrounded by ancient olive trees under the intense Iberian sun",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ochre-cover",
+        "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1800&q=85"
+      }
+    },
+    "gallery": [
+      {
+        "_type": "image",
+        "alt": "Sunken courtyard basin carved from local terracotta-tinted lime plaster with gentle water reflections",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-ochre-gallery-1",
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=85"
+        }
+      },
+      {
+        "_type": "image",
+        "alt": "Deep recessed portal with raw timber pivoting door opening into a high-ceilinged cooling corridor",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-ochre-gallery-2",
+          "url": "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=1600&q=85"
+        }
+      }
+    ],
+    "summary": "Monolithic rammed-earth walls rise from the dry Alentejo plains, offering deep thermal refuge, shadowed courtyards, and silent horizons.",
+    "body": [
+      {
+        "_key": "p1",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t1",
+            "_type": "span",
+            "text": "Rising from the golden plains of southern Portugal, The Ochre Pavilion embraces the harsh, radiant climate of the Alentejo through massive monolithic construction. Utilizing earth excavated directly from the building footprint, 500mm-thick rammed earth walls establish an immense thermal flywheel that regulates indoor temperatures without mechanical cooling."
+          }
+        ]
+      },
+      {
+        "_key": "p2",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t2",
+            "_type": "span",
+            "text": "A sequence of secluded courtyards punctuates the plan, channeling prevailing nocturnal breezes through cross-ventilating corridors. The palette remains strictly loyal to its geography: unpainted clay plaster, reclaimed cork insulation, hand-pressed terracotta tiles, and aged brass fixtures that will oxidize under the sea-salted Atlantic air."
+          }
+        ]
+      }
+    ],
+    "featured": true,
+    "orderRank": 2
+  },
+  {
+    "_id": "project-atelier-saint-germain",
+    "_type": "project",
+    "title": "Atelier Saint-Germain",
+    "slug": { "_type": "slug", "current": "atelier-saint-germain" },
+    "category": "Interior",
+    "location": "Paris, France",
+    "year": 2024,
+    "coverImage": {
+      "_type": "image",
+      "alt": "Grand Haussmannian salon restoration featuring restored cornicing, fluted limestone hearth, and warm travertine floor",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-saint-germain-cover",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85"
+      }
+    },
+    "gallery": [
+      {
+        "_type": "image",
+        "alt": "Custom bronze library shelving with integrated concealed lighting against muted chalk plaster walls",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-saint-germain-gallery-1",
+          "url": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85"
+        }
+      },
+      {
+        "_type": "image",
+        "alt": "Dining enclave centered around a monolithic honed Calacatta Viola marble table and tailored linen seating",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-saint-germain-gallery-2",
+          "url": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=85"
+        }
+      }
+    ],
+    "summary": "A 19th-century Left Bank apartment stripped back to its historic bones and re-imagined with sculptural stone, blackened steel, and natural linen.",
+    "body": [
+      {
+        "_key": "p1",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t1",
+            "_type": "span",
+            "text": "Located in an 1880s Haussmann building on Boulevard Saint-Germain, this comprehensive interior intervention strips away decades of accumulated partitions to rediscover the noble proportions of the original bourgeois apartment. The layout was reordered around an axial gallery connecting grand reception rooms with intimate private quarters."
+          }
+        ]
+      },
+      {
+        "_key": "p2",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t2",
+            "_type": "span",
+            "text": "Every architectural element was designed as bespoke sculpture: an eight-meter monolithic travertine island anchors the open kitchen, while patinated gunmetal steel portals create crisp contemporary thresholds within historic plaster architraves. The dialogue between historical heritage and austere modern restraint remains unwavering."
+          }
+        ]
+      }
+    ],
+    "featured": true,
+    "orderRank": 3
+  },
+  {
+    "_id": "project-maison-blanche",
+    "_type": "project",
+    "title": "Maison Blanche",
+    "slug": { "_type": "slug", "current": "maison-blanche" },
+    "category": "Commercial",
+    "location": "Basel, Switzerland",
+    "year": 2023,
+    "coverImage": {
+      "_type": "image",
+      "alt": "Minimalist white concrete cultural pavilion with rhythmic geometric openings and crisp alpine shadows",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-maison-blanche-cover",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85"
+      }
+    },
+    "gallery": [
+      {
+        "_type": "image",
+        "alt": "Double-height central gallery illuminated by rhythmic sawtooth skylights and polished terrazzo floor",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-maison-blanche-gallery-1",
+          "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=85"
+        }
+      },
+      {
+        "_type": "image",
+        "alt": "Sculptural spiral staircase in cast white concrete ascending toward a circular skylight oculus",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-maison-blanche-gallery-2",
+          "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85"
+        }
+      }
+    ],
+    "summary": "An austere contemporary art foundation where white aggregate concrete, shadow gaps, and indirect northern light form a serene backdrop for sculpture.",
+    "body": [
+      {
+        "_key": "p1",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t1",
+            "_type": "span",
+            "text": "Maison Blanche is a private foundation building designed to exhibit contemporary sculpture alongside the Rhine river in Basel. The building's exterior envelope is poured from custom white Swiss Portland cement with marble dust aggregate, sandblasted to achieve a soft, matte limestone-like tactile texture."
+          }
+        ]
+      },
+      {
+        "_key": "p2",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t2",
+            "_type": "span",
+            "text": "The illumination strategy relies entirely on indirect daylight. Deep north-facing clerestory light monitors diffuse sunlight before it reaches the exhibition planes, preventing harsh specular reflections on sensitive artworks and creating a quiet, contemplative cadence."
+          }
+        ]
+      }
+    ],
+    "featured": true,
+    "orderRank": 4
+  },
+  {
+    "_id": "project-casa-mirador",
+    "_type": "project",
+    "title": "Casa Mirador",
+    "slug": { "_type": "slug", "current": "casa-mirador" },
+    "category": "Residential",
+    "location": "Mallorca, Spain",
+    "year": 2022,
+    "coverImage": {
+      "_type": "image",
+      "alt": "Dry-stacked sandstone cliffside residence with stepped terraces overlooking the Balearic Sea",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-mirador-cover",
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1800&q=85"
+      }
+    },
+    "gallery": [
+      {
+        "_type": "image",
+        "alt": "Shaded colonnade pergola made from peeled eucalyptus trunks casting long linear shadows on terracotta pavers",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-mirador-gallery-1",
+          "url": "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1600&q=85"
+        }
+      }
+    ],
+    "summary": "Perched on the rugged cliffs of Deià, Casa Mirador is an organic stone retreat carved into coastal topography with panoramic ocean vistas.",
+    "body": [
+      {
+        "_key": "p1",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t1",
+            "_type": "span",
+            "text": "Constructed using dry-stone masonry techniques perfected by Mallorcan artisans over centuries, Casa Mirador appears to grow organically from the jagged limestone cliffs of the Serra de Tramuntana. The house is fragmented into low-profile volumes that follow natural contours, minimizing visual intrusion on the coastal skyline."
+          }
+        ]
+      }
+    ],
+    "featured": false,
+    "orderRank": 5
+  },
+  {
+    "_id": "project-vessel-void",
+    "_type": "project",
+    "title": "Vessel & Void",
+    "slug": { "_type": "slug", "current": "vessel-void" },
+    "category": "Interior",
+    "location": "Milan, Italy",
+    "year": 2024,
+    "coverImage": {
+      "_type": "image",
+      "alt": "Minimalist interior featuring blackened bronze cabinetry, raw plaster walls, and sculptural oak furnishings",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-vessel-cover",
+        "url": "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1800&q=85"
+      }
+    },
+    "gallery": [
+      {
+        "_type": "image",
+        "alt": "Detail view of smoked oak joinery with concealed recessed pulls and seamless shadow line perimeter",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-vessel-gallery-1",
+          "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85"
+        }
+      }
+    ],
+    "summary": "An industrial loft in Milan transformed into a tactile residential laboratory through dark bronze, textured gypsum, and smoked oak.",
+    "body": [
+      {
+        "_key": "p1",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t1",
+            "_type": "span",
+            "text": "Occupying a former textile warehouse in the Navigli district, Vessel & Void treats the domestic interior as an orchestration of dark materials and singular apertures. Rich tactile textures celebrate imperfection and natural aging under changing ambient daylight."
+          }
+        ]
+      }
+    ],
+    "featured": false,
+    "orderRank": 6
+  },
+  {
+    "_id": "project-nordic-light",
+    "_type": "project",
+    "title": "Nordic Light Pavilion",
+    "slug": { "_type": "slug", "current": "nordic-light" },
+    "category": "Commercial",
+    "location": "Oslo, Norway",
+    "year": 2023,
+    "coverImage": {
+      "_type": "image",
+      "alt": "Mass timber pavilion with soaring glass curtain wall set against a winter pine forest near Oslo",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-nordic-cover",
+        "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1800&q=85"
+      }
+    },
+    "gallery": [
+      {
+        "_type": "image",
+        "alt": "Glulam structural spruce columns meeting polished concrete floor in a light-flooded public atrium",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-nordic-gallery-1",
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"
+        }
+      }
+    ],
+    "summary": "A mass timber research pavilion celebrating Scandinavian forestry craftsmanship, low carbon design, and crystalline natural light.",
+    "body": [
+      {
+        "_key": "p1",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t1",
+            "_type": "span",
+            "text": "Constructed from locally harvested glulam spruce and cross-laminated timber, the Nordic Light Pavilion serves as an innovation laboratory for ecological research. The building achieves net-positive operational energy through high-performance triple glazing and geothermal heat recovery."
+          }
+        ]
+      }
+    ],
+    "featured": false,
+    "orderRank": 7
+  },
+  {
+    "_id": "project-fjord-retreat",
+    "_type": "project",
+    "title": "Fjord Retreat",
+    "slug": { "_type": "slug", "current": "fjord-retreat" },
+    "category": "Landscape",
+    "location": "Bergen, Norway",
+    "year": 2022,
+    "coverImage": {
+      "_type": "image",
+      "alt": "Low-slung blackened timber cabin embedded into granite shoreline overlooking a tranquil Norwegian fjord",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-fjord-cover",
+        "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1800&q=85"
+      }
+    },
+    "gallery": [
+      {
+        "_type": "image",
+        "alt": "Stepped granite dock meeting native coastal moss and wild grasses under atmospheric mist",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-fjord-gallery-1",
+          "url": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1600&q=85"
+        }
+      }
+    ],
+    "summary": "A landscape and architectural intervention along the western Norwegian fjords, connecting upland trails to shoreline bathing terraces.",
+    "body": [
+      {
+        "_key": "p1",
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_key": "t1",
+            "_type": "span",
+            "text": "This subtle landscape intervention respects the raw, elemental beauty of the Norwegian coastline. Stepped granite paths follow natural geological fault lines down to a sheltered timber sauna and bathing platform, creating moments of quiet contemplation between land and water."
+          }
+        ]
+      }
+    ],
+    "featured": false,
+    "orderRank": 8
+  }
+]

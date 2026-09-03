@@ -1,0 +1,70 @@
+[
+  {
+    "_id": "member-elena-vance",
+    "_type": "studioMember",
+    "name": "Elena Vance",
+    "role": "Founding Partner & Principal",
+    "photo": {
+      "_type": "image",
+      "alt": "Portrait of Elena Vance, architect and founding partner of Atelier Studio, in natural daylight",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-elena-vance",
+        "url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85"
+      }
+    },
+    "bio": "Elena founded Atelier in 2014 following a decade practicing in Basel and Tokyo. Her work investigates the emotional resonance of raw materials and tectonic restraint.",
+    "orderRank": 1
+  },
+  {
+    "_id": "member-julian-thorne",
+    "_type": "studioMember",
+    "name": "Julian Thorne",
+    "role": "Partner, Interior Architecture",
+    "photo": {
+      "_type": "image",
+      "alt": "Portrait of Julian Thorne, partner of interior architecture, in his studio workshop",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-julian-thorne",
+        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=85"
+      }
+    },
+    "bio": "Julian directs Atelier's interior practice, bringing a craftsman's precision to bespoke joinery, custom stone carving, and tactile atmospheric lighting.",
+    "orderRank": 2
+  },
+  {
+    "_id": "member-sofia-lin",
+    "_type": "studioMember",
+    "name": "Sofia Lin",
+    "role": "Design Director, Landscape",
+    "photo": {
+      "_type": "image",
+      "alt": "Portrait of Sofia Lin, design director of landscape architecture, overlooking botanical grounds",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-sofia-lin",
+        "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85"
+      }
+    },
+    "bio": "Sofia integrates native ecological systems with built form, shaping terrains that blur the boundary between indoor sanctuary and surrounding wilderness.",
+    "orderRank": 3
+  },
+  {
+    "_id": "member-marcus-weber",
+    "_type": "studioMember",
+    "name": "Marcus Weber",
+    "role": "Technical Director",
+    "photo": {
+      "_type": "image",
+      "alt": "Portrait of Marcus Weber, technical director, reviewing architectural blueprints",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-marcus-weber",
+        "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=85"
+      }
+    },
+    "bio": "Marcus oversees structural engineering, passive building science, and construction detailing, ensuring rigorous execution from envelope to joint.",
+    "orderRank": 4
+  }
+]
