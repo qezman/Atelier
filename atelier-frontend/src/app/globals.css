@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --paper: #f7f5f1;
+  --paper-raised: #ffffff;
+  --charcoal: #1c1a17;
+
+  --ink: #201e1a;
+  --ink-secondary: #625d54;
+  --ink-tertiary: #a39c8f;
+  --ink-on-dark: #f7f5f1;
+  --ink-on-dark-secondary: rgba(247, 245, 241, 0.6);
+
+  --clay: #a8532f;
+  --clay-text: #8a3f22;
+  --clay-dim: rgba(168, 83, 47, 0.08);
+
+  --border: rgba(32, 30, 26, 0.1);
+  --border-strong: rgba(32, 30, 26, 0.2);
+  --border-on-dark: rgba(247, 245, 241, 0.14);
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--clay);
+  color: var(--paper);
+}

@@ -7,7 +7,29 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        paper: 'var(--paper)',
+        'paper-raised': 'var(--paper-raised)',
+        charcoal: 'var(--charcoal)',
+        ink: 'var(--ink)',
+        'ink-secondary': 'var(--ink-secondary)',
+        'ink-tertiary': 'var(--ink-tertiary)',
+        'ink-on-dark': 'var(--ink-on-dark)',
+        'ink-on-dark-secondary': 'var(--ink-on-dark-secondary)',
+        clay: 'var(--clay)',
+        'clay-text': 'var(--clay-text)',
+        'clay-dim': 'var(--clay-dim)',
+      },
+      borderColor: {
+        DEFAULT: 'var(--border)',
+        strong: 'var(--border-strong)',
+        'on-dark': 'var(--border-on-dark)',
+      },
+      transitionTimingFunction: {
+        'out-expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
+      },
+    },
   },
   plugins: [],
 };
