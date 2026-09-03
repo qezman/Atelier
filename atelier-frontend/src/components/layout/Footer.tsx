@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { IconBrandInstagram, IconBrandPinterest, IconBrandLinkedin } from '@tabler/icons-react';
+import { Instagram, Linkedin, Globe } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -45,16 +45,16 @@ export function Footer() {
                 aria-label="Atelier on Instagram"
                 className="text-ink-on-dark-secondary hover:text-ink-on-dark transition-colors p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-clay"
               >
-                <IconBrandInstagram size={20} stroke={1.5} />
+                <Instagram size={20} strokeWidth={1.5} />
               </a>
               <a
-                href="https://pinterest.com"
+                href="https://atelier.studio"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Atelier on Pinterest"
+                aria-label="Atelier Global Portfolio"
                 className="text-ink-on-dark-secondary hover:text-ink-on-dark transition-colors p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-clay"
               >
-                <IconBrandPinterest size={20} stroke={1.5} />
+                <Globe size={20} strokeWidth={1.5} />
               </a>
               <a
                 href="https://linkedin.com"
@@ -63,7 +63,7 @@ export function Footer() {
                 aria-label="Atelier on LinkedIn"
                 className="text-ink-on-dark-secondary hover:text-ink-on-dark transition-colors p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-clay"
               >
-                <IconBrandLinkedin size={20} stroke={1.5} />
+                <Linkedin size={20} strokeWidth={1.5} />
               </a>
             </div>
           </div>

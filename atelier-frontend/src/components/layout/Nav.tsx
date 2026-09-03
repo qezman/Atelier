@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { IconMenu2, IconX } from '@tabler/icons-react';
+import { Menu, X } from 'lucide-react';
 
 const NAV_LINKS = [
   { href: '/work', label: 'Work' },
@@ -59,11 +59,11 @@ export function Nav() {
           aria-expanded={mobileOpen}
           aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
         >
-          {mobileOpen ? <IconX size={20} /> : <IconMenu2 size={20} />}
+          {mobileOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
-      {/* Mobile Drawer (Editorial & Restrained, not a giant full-screen dark blob) */}
+      {/* Mobile Drawer */}
       {mobileOpen && (
         <div className="md:hidden border-b border-border bg-paper px-6 py-6 space-y-4">
           <nav aria-label="Mobile Navigation" className="flex flex-col gap-4">

@@ -6,10 +6,10 @@ export function PullQuote() {
     >
       <div className="max-w-[720px] text-center space-y-6">
         <blockquote className="type-headline italic font-normal text-ink leading-relaxed">
-          &ldquo;We design from the inside out &mdash; a room is a feeling before it is a floor plan.&rdquo;
+          "We design from the inside out — a room is a feeling before it is a floor plan."
         </blockquote>
         <cite className="type-caption block not-italic tracking-wider uppercase text-[11px] text-ink-tertiary">
-          &mdash; Elena Vance, Founding Partner
+          Elena Vance, Founding Partner
         </cite>
       </div>
     </section>

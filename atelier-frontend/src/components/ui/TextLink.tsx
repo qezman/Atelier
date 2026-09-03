@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 interface TextLinkProps {
   href: string;
@@ -25,7 +26,7 @@ export function TextLink({ href, children, className = '', onDark = false }: Tex
           }`}
         />
       </span>
-      <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+      <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 shrink-0" />
     </Link>
   );
 }
