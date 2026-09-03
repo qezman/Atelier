@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        display: ['var(--font-newsreader)', 'Newsreader', 'Georgia', 'serif'],
+        body: ['var(--font-public-sans)', 'Public Sans', 'system-ui', 'sans-serif'],
+      },
       colors: {
         paper: 'var(--paper)',
         'paper-raised': 'var(--paper-raised)',
