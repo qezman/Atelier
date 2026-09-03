@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Newsreader, Public_Sans } from 'next/font/google';
 import { Nav } from '@/components/layout/Nav';
 import { Footer } from '@/components/layout/Footer';
+import { SmoothScrollProvider } from '@/components/providers/SmoothScrollProvider';
 import './globals.css';
 
 const newsreader = Newsreader({
@@ -19,7 +20,7 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Atelier - Architecture & Interior Design Studio',
+  title: 'Atelier — Architecture & Interior Design Studio',
   description: 'Spaces that hold memory. An architecture and interior design studio.',
 };
 
@@ -31,9 +32,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${newsreader.variable} ${publicSans.variable}`}>
       <body className="font-body antialiased bg-paper text-ink min-h-screen flex flex-col">
-        <Nav />
-        <div className="flex-1">{children}</div>
-        <Footer />
+        <SmoothScrollProvider>
+          <Nav />
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </SmoothScrollProvider>
       </body>
     </html>
   );
