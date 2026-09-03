@@ -5,6 +5,7 @@ import { Hero } from '@/components/home/Hero';
 import { PullQuote } from '@/components/home/PullQuote';
 import { FeaturedProjects } from '@/components/home/FeaturedProjects';
 import { StudioStrip } from '@/components/home/StudioStrip';
+import { ContactCta } from '@/components/home/ContactCta';
 
 export default async function HomePage() {
   const projects = await sanityFetch<Project[]>(
@@ -19,6 +20,7 @@ export default async function HomePage() {
       <PullQuote />
       <FeaturedProjects projects={projects} />
       <StudioStrip />
+      <ContactCta />
     </main>
   );
 }
