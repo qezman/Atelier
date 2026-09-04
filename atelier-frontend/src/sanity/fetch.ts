@@ -3,7 +3,13 @@
 
 import { client } from './client';
 import type { QueryParams } from 'next-sanity';
-import { FEATURED_PROJECTS_QUERY, ALL_PROJECTS_QUERY, PROJECT_BY_SLUG_QUERY, STUDIO_MEMBERS_QUERY } from './queries';
+import {
+  FEATURED_PROJECTS_QUERY,
+  ALL_PROJECTS_QUERY,
+  PROJECT_BY_SLUG_QUERY,
+  NEXT_PROJECT_QUERY,
+  STUDIO_MEMBERS_QUERY,
+} from './queries';
 import { FALLBACK_PROJECTS, FALLBACK_MEMBERS } from './seedData';
 
 function resolveFallback<T>(query: string, params: QueryParams = {}): T {
@@ -16,6 +22,12 @@ function resolveFallback<T>(query: string, params: QueryParams = {}): T {
   if (query === PROJECT_BY_SLUG_QUERY) {
     const project = FALLBACK_PROJECTS.find((p) => p.slug.current === params.slug);
     return (project || null) as unknown as T;
+  }
+  if (query === NEXT_PROJECT_QUERY) {
+    const currentRank = typeof params.currentOrderRank === 'number' ? params.currentOrderRank : 0;
+    const sorted = [...FALLBACK_PROJECTS].sort((a, b) => (a.orderRank || 0) - (b.orderRank || 0));
+    const next = sorted.find((p) => (p.orderRank || 0) > currentRank) || sorted[0];
+    return (next || null) as unknown as T;
   }
   if (query === STUDIO_MEMBERS_QUERY) {
     return FALLBACK_MEMBERS as unknown as T;

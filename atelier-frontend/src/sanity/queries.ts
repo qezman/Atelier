@@ -14,16 +14,23 @@ export const FEATURED_PROJECTS_QUERY = defineQuery(`
 
 export const ALL_PROJECTS_QUERY = defineQuery(`
   *[_type == "project"] | order(orderRank asc) {
-    _id, title, slug, category, location, year,
+    _id, title, slug, category, location, year, orderRank,
     coverImage { asset, alt }
   }
 `);
 
 export const PROJECT_BY_SLUG_QUERY = defineQuery(`
   *[_type == "project" && slug.current == $slug][0] {
-    _id, title, category, location, year, summary, body,
+    _id, title, slug, category, location, year, summary, body, orderRank,
     coverImage { asset, alt },
     gallery[] { asset, alt }
+  }
+`);
+
+export const NEXT_PROJECT_QUERY = defineQuery(`
+  *[_type == "project" && orderRank > $currentOrderRank] | order(orderRank asc)[0] {
+    _id, title, slug, category, location, year, orderRank,
+    coverImage { asset, alt }
   }
 `);
 
