@@ -1,14 +1,19 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import type { Project } from '@/types/project';
 import { urlFor } from '@/sanity/image';
+import { useFlipTransition } from '@/hooks/useFlipTransition';
 
 interface ProjectHeroProps {
   project: Project;
 }
 
 export function ProjectHero({ project }: ProjectHeroProps) {
+  useFlipTransition(`project-${project.slug.current}`);
+
   const imageUrl =
     project.coverImage.asset?.url ||
     (project.coverImage.asset ? urlFor(project.coverImage.asset).url() : '/images/placeholder.webp');
