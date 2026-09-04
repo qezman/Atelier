@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
-import type { Project } from '@/types/project';
-import { urlFor } from '@/sanity/image';
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+import type { Project } from "@/types/project";
+import { urlFor } from "@/sanity/image";
 
 interface NextProjectProps {
   nextProject: Project;
@@ -13,7 +13,7 @@ export function NextProject({ nextProject }: NextProjectProps) {
     nextProject.coverImage.asset?.url ||
     (nextProject.coverImage.asset
       ? urlFor(nextProject.coverImage.asset).url()
-      : '/images/placeholder.webp');
+      : "/images/placeholder.webp");
 
   return (
     <aside
