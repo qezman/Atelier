@@ -1,4 +1,4 @@
-import { db } from '../db/sqlite';
+import { db } from "../db/sqlite";
 
 export interface EnquiryData {
   name: string;

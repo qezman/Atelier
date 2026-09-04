@@ -1,11 +1,11 @@
-import Database from 'better-sqlite3';
-import path from 'path';
+import Database from "better-sqlite3";
+import path from "path";
 
-const DB_PATH = process.env.DATABASE_PATH || 'atelier.db';
+const DB_PATH = process.env.DATABASE_PATH || "atelier.db";
 
 const db = new Database(path.resolve(DB_PATH));
 
-db.pragma('journal_mode = WAL');
+db.pragma("journal_mode = WAL");
 
 db.exec(`
   CREATE TABLE IF NOT EXISTS enquiries (
