@@ -39,6 +39,7 @@ export function ProjectCard({
             src={imageUrl}
             alt={project.coverImage.alt}
             aspectRatio={aspectRatio}
+            sizes="(max-width: 1024px) 100vw, 55vw"
             priority={priority}
             className="w-full"
           />
