@@ -10,7 +10,7 @@
       "asset": {
         "_type": "reference",
         "_ref": "image-elena-vance",
-        "url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85"
+        "url": "/images/team/elena-vance.jpg"
       }
     },
     "bio": "Elena founded Atelier in 2014 following a decade practicing in Basel and Tokyo. Her work investigates the emotional resonance of raw materials and tectonic restraint.",
@@ -27,7 +27,7 @@
       "asset": {
         "_type": "reference",
         "_ref": "image-julian-thorne",
-        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=85"
+        "url": "/images/team/julian-thorne.jpg"
       }
     },
     "bio": "Julian directs Atelier's interior practice, bringing a craftsman's precision to bespoke joinery, custom stone carving, and tactile atmospheric lighting.",
@@ -44,7 +44,7 @@
       "asset": {
         "_type": "reference",
         "_ref": "image-sofia-lin",
-        "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85"
+        "url": "/images/team/sofia-lin.jpg"
       }
     },
     "bio": "Sofia integrates native ecological systems with built form, shaping terrains that blur the boundary between indoor sanctuary and surrounding wilderness.",
@@ -61,7 +61,7 @@
       "asset": {
         "_type": "reference",
         "_ref": "image-marcus-weber",
-        "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=85"
+        "url": "/images/team/marcus-weber.jpg"
       }
     },
     "bio": "Marcus oversees structural engineering, passive building science, and construction detailing, ensuring rigorous execution from envelope to joint.",
