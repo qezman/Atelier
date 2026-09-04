@@ -24,9 +24,9 @@ export function TeamMemberCard({ member }: TeamMemberCardProps) {
 
       {/* Member Details */}
       <div className="space-y-1.5 pt-1">
-        <h2 className="type-title text-ink font-medium text-lg sm:text-xl">
+        <h3 className="type-title text-ink font-medium text-lg sm:text-xl">
           {member.name}
-        </h2>
+        </h3>
 
         {member.role && (
           <p className="type-label text-clay-text text-xs tracking-wider">

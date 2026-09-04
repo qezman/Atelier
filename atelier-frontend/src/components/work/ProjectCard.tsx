@@ -45,9 +45,9 @@ export function ProjectCard({
         </div>
 
         <div className="mt-3.5 flex items-baseline justify-between text-xs sm:text-sm">
-          <h2 className="font-medium text-ink group-hover:text-clay-text transition-colors">
+          <h3 className="font-medium text-ink group-hover:text-clay-text transition-colors">
             {project.title}
-          </h2>
+          </h3>
           {metaItems && (
             <span className="type-caption text-ink-secondary text-right ml-4">
               {metaItems}
