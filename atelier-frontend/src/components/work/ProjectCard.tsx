@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import type { Project } from '@/types/project';
-import { RevealImage } from '@/components/ui/RevealImage';
-import { urlFor } from '@/sanity/image';
+import Link from "next/link";
+import type { Project } from "@/types/project";
+import { RevealImage } from "@/components/ui/RevealImage";
+import { urlFor } from "@/sanity/image";
 
 interface ProjectCardProps {
   project: Project;
@@ -12,18 +12,20 @@ interface ProjectCardProps {
 
 export function ProjectCard({
   project,
-  aspectRatio = '4/3',
-  className = '',
+  aspectRatio = "4/3",
+  className = "",
   priority = false,
 }: ProjectCardProps) {
   // resolve image URL whether from Sanity asset reference or direct fallback URL
   const imageUrl =
     project.coverImage.asset?.url ||
-    (project.coverImage.asset ? urlFor(project.coverImage.asset).url() : '/images/placeholder.webp');
+    (project.coverImage.asset
+      ? urlFor(project.coverImage.asset).url()
+      : "/images/placeholder.webp");
 
   const metaItems = [project.category, project.location, project.year]
     .filter(Boolean)
-    .join(', ');
+    .join(", ");
 
   return (
     <article className={`group flex flex-col ${className}`}>

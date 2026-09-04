@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import { gsap, Flip } from '@/lib/gsap';
-import { useReducedMotion } from '@/hooks/useReducedMotion';
+import { useEffect } from "react";
+import { gsap, Flip } from "@/lib/gsap";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 export function useFlipTransition(flipId?: string) {
   const reducedMotion = useReducedMotion();
@@ -10,12 +10,12 @@ export function useFlipTransition(flipId?: string) {
   useEffect(() => {
     // Focus moves to the project h1 immediately following the Flip transition
     // to prevent keyboard and screen reader focus from becoming stranded on the removed thumbnail.
-    const heading = document.getElementById('project-heading');
+    const heading = document.getElementById("project-heading");
 
     const handoverFocus = () => {
       if (heading) {
-        if (!heading.hasAttribute('tabindex')) {
-          heading.setAttribute('tabindex', '-1');
+        if (!heading.hasAttribute("tabindex")) {
+          heading.setAttribute("tabindex", "-1");
         }
         heading.focus({ preventScroll: true });
       }
@@ -37,7 +37,7 @@ export function useFlipTransition(flipId?: string) {
         opacity: 0.9,
         scale: 0.98,
         duration: 0.6,
-        ease: 'power2.out',
+        ease: "power2.out",
         onComplete: handoverFocus,
       });
     });

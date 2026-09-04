@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import { SectionLabel } from '@/components/ui/SectionLabel';
-import { TextLink } from '@/components/ui/TextLink';
+import Image from "next/image";
+import { SectionLabel } from "@/components/ui/SectionLabel";
+import { TextLink } from "@/components/ui/TextLink";
 
 export function Hero() {
   return (
@@ -18,7 +18,8 @@ export function Hero() {
           </h1>
 
           <p className="type-body text-ink-secondary max-w-[380px] mb-8 sm:mb-10 text-sm sm:text-base">
-            We sculpt light, raw materials, and architectural volume into quiet sanctuaries for living and working.
+            We sculpt light, raw materials, and architectural volume into quiet
+            sanctuaries for living and working.
           </p>
 
           <div>

@@ -1,70 +1,82 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { CheckCircle2, AlertCircle, ArrowRight } from 'lucide-react';
-import { submitEnquiry } from '@/lib/api/enquiry';
+import { useState } from "react";
+import { CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
+import { submitEnquiry } from "@/lib/api/enquiry";
 
 export function EnquiryForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    projectType: 'Residential',
-    message: '',
+    name: "",
+    email: "",
+    projectType: "Residential",
+    message: "",
   });
 
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [status, setStatus] = useState<
+    "idle" | "submitting" | "success" | "error"
+  >("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
     if (errorMessage) {
-      setErrorMessage('');
-      setStatus('idle');
+      setErrorMessage("");
+      setStatus("idle");
     }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
-      setStatus('error');
-      setErrorMessage('Please complete all required fields.');
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.message.trim()
+    ) {
+      setStatus("error");
+      setErrorMessage("Please complete all required fields.");
       return;
     }
 
-    setStatus('submitting');
-    setErrorMessage('');
+    setStatus("submitting");
+    setErrorMessage("");
 
     const res = await submitEnquiry(formData);
 
     if (res.error) {
-      setStatus('error');
+      setStatus("error");
       setErrorMessage(res.error);
     } else {
-      setStatus('success');
+      setStatus("success");
       setFormData({
-        name: '',
-        email: '',
-        projectType: 'Residential',
-        message: '',
+        name: "",
+        email: "",
+        projectType: "Residential",
+        message: "",
       });
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="space-y-6 max-w-lg w-full">
+    <form
+      onSubmit={handleSubmit}
+      noValidate
+      className="space-y-6 max-w-lg w-full"
+    >
       {/* Live Region for Error / Success Announcements */}
       <div aria-live="polite" className="min-h-[1.5rem]">
-        {status === 'error' && (
+        {status === "error" && (
           <div className="flex items-center gap-2 text-sm text-clay-text bg-clay-dim p-3 rounded-sm border border-clay/30">
             <AlertCircle className="w-4 h-4 shrink-0 text-clay" />
             <span>{errorMessage}</span>
           </div>
         )}
-        {status === 'success' && (
+        {status === "success" && (
           <div className="flex items-center gap-2 text-sm text-ink bg-paper-raised p-3 rounded-sm border border-border-strong">
             <CheckCircle2 className="w-4 h-4 shrink-0 text-clay" />
             <span>Thank you. Your consultation enquiry has been received.</span>
@@ -73,8 +85,14 @@ export function EnquiryForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="enquiry-name" className="type-label text-ink-secondary block">
-          Full Name <span className="text-clay" aria-hidden="true">*</span>
+        <label
+          htmlFor="enquiry-name"
+          className="type-label text-ink-secondary block"
+        >
+          Full Name{" "}
+          <span className="text-clay" aria-hidden="true">
+            *
+          </span>
         </label>
         <input
           id="enquiry-name"
@@ -89,8 +107,14 @@ export function EnquiryForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="enquiry-email" className="type-label text-ink-secondary block">
-          Email Address <span className="text-clay" aria-hidden="true">*</span>
+        <label
+          htmlFor="enquiry-email"
+          className="type-label text-ink-secondary block"
+        >
+          Email Address{" "}
+          <span className="text-clay" aria-hidden="true">
+            *
+          </span>
         </label>
         <input
           id="enquiry-email"
@@ -105,7 +129,10 @@ export function EnquiryForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="enquiry-type" className="type-label text-ink-secondary block">
+        <label
+          htmlFor="enquiry-type"
+          className="type-label text-ink-secondary block"
+        >
           Project Type
         </label>
         <select
@@ -123,8 +150,14 @@ export function EnquiryForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="enquiry-message" className="type-label text-ink-secondary block">
-          Project Details & Location <span className="text-clay" aria-hidden="true">*</span>
+        <label
+          htmlFor="enquiry-message"
+          className="type-label text-ink-secondary block"
+        >
+          Project Details & Location{" "}
+          <span className="text-clay" aria-hidden="true">
+            *
+          </span>
         </label>
         <textarea
           id="enquiry-message"
@@ -140,10 +173,12 @@ export function EnquiryForm() {
 
       <button
         type="submit"
-        disabled={status === 'submitting'}
+        disabled={status === "submitting"}
         className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-charcoal text-ink-on-dark hover:bg-ink px-8 py-4 text-xs font-medium tracking-[0.14em] uppercase transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-clay disabled:opacity-50"
       >
-        <span>{status === 'submitting' ? 'Submitting…' : 'Submit Enquiry'}</span>
+        <span>
+          {status === "submitting" ? "Submitting…" : "Submit Enquiry"}
+        </span>
         <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
       </button>
     </form>

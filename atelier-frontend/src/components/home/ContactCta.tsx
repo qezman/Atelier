@@ -1,5 +1,5 @@
-import { SectionLabel } from '@/components/ui/SectionLabel';
-import { TextLink } from '@/components/ui/TextLink';
+import { SectionLabel } from "@/components/ui/SectionLabel";
+import { TextLink } from "@/components/ui/TextLink";
 
 export function ContactCta() {
   return (
@@ -10,12 +10,11 @@ export function ContactCta() {
       <div className="max-w-xl space-y-6">
         <SectionLabel>ENQUIRIES</SectionLabel>
 
-        <h2 className="type-headline text-ink">
-          Start a project.
-        </h2>
+        <h2 className="type-headline text-ink">Start a project.</h2>
 
         <p className="type-body text-ink-secondary max-w-md mx-auto">
-          We accept a select number of architectural and interior commissions each year to maintain uncompromising craftsmanship.
+          We accept a select number of architectural and interior commissions
+          each year to maintain uncompromising craftsmanship.
         </p>
 
         <div className="pt-4 flex justify-center">

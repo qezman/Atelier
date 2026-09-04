@@ -1,7 +1,7 @@
-import type { Project } from '@/types/project';
-import { ProjectCard } from '@/components/work/ProjectCard';
-import { SectionLabel } from '@/components/ui/SectionLabel';
-import { TextLink } from '@/components/ui/TextLink';
+import type { Project } from "@/types/project";
+import { ProjectCard } from "@/components/work/ProjectCard";
+import { SectionLabel } from "@/components/ui/SectionLabel";
+import { TextLink } from "@/components/ui/TextLink";
 
 interface FeaturedProjectsProps {
   projects: Project[];
@@ -32,38 +32,25 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-start">
           {projects[0] && (
             <div className="lg:col-span-7">
-              <ProjectCard
-                project={projects[0]}
-                aspectRatio="16/10"
-                priority
-              />
+              <ProjectCard project={projects[0]} aspectRatio="16/10" priority />
             </div>
           )}
 
           {projects[1] && (
             <div className="lg:col-span-5 lg:pt-16">
-              <ProjectCard
-                project={projects[1]}
-                aspectRatio="4/5"
-              />
+              <ProjectCard project={projects[1]} aspectRatio="4/5" />
             </div>
           )}
 
           {projects[2] && (
             <div className="lg:col-span-6">
-              <ProjectCard
-                project={projects[2]}
-                aspectRatio="3/2"
-              />
+              <ProjectCard project={projects[2]} aspectRatio="3/2" />
             </div>
           )}
 
           {projects[3] && (
             <div className="lg:col-span-6 lg:pt-8">
-              <ProjectCard
-                project={projects[3]}
-                aspectRatio="3/2"
-              />
+              <ProjectCard project={projects[3]} aspectRatio="3/2" />
             </div>
           )}
         </div>

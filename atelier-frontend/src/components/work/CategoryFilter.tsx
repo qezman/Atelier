@@ -1,6 +1,12 @@
-'use client';
+"use client";
 
-export const CATEGORIES = ['All', 'Residential', 'Commercial', 'Interior', 'Landscape'] as const;
+export const CATEGORIES = [
+  "All",
+  "Residential",
+  "Commercial",
+  "Interior",
+  "Landscape",
+] as const;
 
 export type CategoryFilterType = (typeof CATEGORIES)[number];
 
@@ -13,7 +19,7 @@ interface CategoryFilterProps {
 export function CategoryFilter({
   activeCategory,
   onSelectCategory,
-  className = '',
+  className = "",
 }: CategoryFilterProps) {
   return (
     <div
@@ -31,8 +37,8 @@ export function CategoryFilter({
             aria-pressed={isActive}
             className={`px-3.5 py-1.5 text-[12px] sm:text-[13px] tracking-[0.1em] uppercase transition-all duration-200 rounded-full border focus:outline-none focus-visible:ring-2 focus-visible:ring-clay ${
               isActive
-                ? 'border-clay text-clay-text bg-clay-dim font-medium'
-                : 'border-border text-ink-secondary hover:text-ink hover:border-border-strong bg-transparent'
+                ? "border-clay text-clay-text bg-clay-dim font-medium"
+                : "border-border text-ink-secondary hover:text-ink hover:border-border-strong bg-transparent"
             }`}
           >
             {category}
